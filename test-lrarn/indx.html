@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="continer">
+        <div class="header">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img class="logo-img" src="img/logo.png" alt="">
+                    <h2 class="text-logo1 text-logo">dreem</h2>
+                    <h2 class="text-logo2 text-logo">food</h2>
+                </div>
+                <div class="links-sho-con1">
+                    <ul class="links-sho1">
+                        <li class="li-sho1 "><a class="a-sho1 col1" href="">about</a></li>
+                        <li class="li-sho1 "><a class="a-sho1 col1" href="">contact</a></li>
+                        <li class="li-sho1 "><a class="a-sho1 col2" href="">servises</a></li>
+                        <li class="li-sho1 "><a class="a-sho1 col2" href="">menu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-margin">
+                <div class="addres-text">
+                    <div class="addres-one ">
+                        <h2>are you hungry?</h2>
+                    </div>
+                    <div class="addres-two ">Don't wait!</div>
+                    <div class="addres-three">let's start watch the menu now</div>
+                    <button class="bttn-watch-menu" type="button">watch menu </button>
+                </div>
+                <div class="nn">
+                    <h2>special <span class="nn2"> food </span></h2>
+                </div>
+                <div class="Special-food-sction-header">
+                    <div class="con">
+                        <div class="info">
+                            <div class="mar">
+                                <h5>food name</h5>
+                                <p class="para">ay kalam fe</p>
+                                <p class="para">el7amam</p>
+                                <button class="card-special-food">card</button>
+                            </div>
+                        </div>
+                        <div class="box2">
+
+                        </div>
+                    </div>
+
+                    <div class="con2">
+                        <div class="info2">
+                            <div class="mar2">
+                                <h5>food name</h5>
+                                <p class="para">ay kalam fe</p>
+                                <p class="para">el7amam</p>
+                                <button class="card-special-food">card</button>
+                            </div>
+                        </div>
+                        <div class="box3">
+
+                        </div>
+                    </div>
+
+                    <div class="con3">
+                        <div class="info3">
+                            <div class="mar3">
+                                <h5>food name</h5>
+                                <p class="para">ay kalam fe</p>
+                                <p class="para">el7amam</p>
+                                <button class="card-special-food">card</button>
+                            </div>
+                        </div>
+                        <div class="box4">
+
+                        </div>
+                    </div>
+                    <div class="con4">
+                        <div class="info4">
+                            <div class="mar4">
+                                <h5>food name</h5>
+                                <p class="para">ay kalam fe</p>
+                                <p class="para">el7amam</p>
+                                <button class="card-special-food">card</button>
+                            </div>
+                        </div>
+                        <div class="box5">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="mar-body">
+            <div class="btn-parant">
+                <button id="delivery" onclick="imgClicked(this, 'delivery')" class="delivery-menu btn-sa active"
+                    type="button">
+                    <img class="delivery-logo-img" src="img/delivery-logo.png" alt="delivery logo" />
+                    <h1 class="features-delivery-address">Delivery</h1>
+                    <p class="features-delivery">
+                        There is a delivery service
+                        <br />for your convenience
+                    </p>
+                </button>
+                <button id="phone" onclick="imgClicked(this, 'phone')" class="phone-menu btn-sa" type="button">
+                    <img class="phone-logo-img" src="img/phone-logo.png" alt="phone logo" />
+                    <h1 class="features-phone-address">Phone</h1>
+                    <p class="features-phone-para"> You can contact us in
+                        <br />case of complaint
+                    </p>
+                </button>
+                <button id="menu" onclick="imgClicked(this, 'menu')" class="menu btn-sa" type="button">
+                    <img class="menu-logo-img" src="img/menu-logo.png" alt="menu logo" />
+                    <h1 class="features-menu-address">Menu</h1>
+                    <p class="features-menu-para"> You can watch the menu
+                        <br />to help you choose
+                        <br />your food
+                    </p>
+                </button>
+                <button id="location" onclick="imgClicked(this, 'location')" class="location-menu btn-sa" type="button">
+                    <img class="location-logo-img" src="img/location-logo.png" alt="delivery logo" />
+                    <h1>Location</h1>
+                </button>
+            </div>
+            <!--hidden information-->
+            <div id="delivery-a" class="isHidden delivery-data">
+                <h1 class="delivery-data-address"> Delivery</h1>
+                <p class="para-delivery-data">delivery ay kalam fe el7mam
+                    <br /> bla bla bla sffhhy
+                </p>
+                <button class="delivery-button-data" type="button">More</button>
+            </div>
+            <div id="phone-a" class="isHidden phone-data">
+                <h1 class="phone-data-address">Phone</h1>
+                <p class="para-phone-data">Phone ay kalam fe el7mam
+                    <br /> bla bla bla sffhhy
+                </p>
+                <button class="phone-button-data" type="button">More</button>
+            </div>
+            <div id="menu-a" class="isHidden menu-data">
+                <h1 class="menu-data-address">Menu</h1>
+                <p class="para-menu-data">Menu ay kalam fe el7mam
+                    <br /> bla bla bla sffhhy
+                </p>
+                <button class="menu-button-data" type="button">More</button>
+            </div>
+            <div id="location-a" class="isHidden location-data">
+                <h1 class="location-data-address">Location</h1>
+                <p class="para-location-data">location ay kalam fe el7mam
+                    <br /> bla bla bla sffhhy
+                </p>
+                <button class="location-button-data" type="button">More</button>
+            </div>
+            <script src="jquery-3.6.0.slim.min.js"></script>
+
+            <script src="main.js"> </script>
+
+
+
+            <div class="go-to-menu-con">
+                <div class="go-to-seafood-con">
+
+                    <div class="go-to-seafood go-to">
+                       <a href="#seafood-section"> <button class="bttn-go-to-seafood">go</button></a>
+                    </div>
+                    <div class="go-to-seafood-background go-to-bac ">
+                        <h2 class="seafood-addres-go-to go-to-addres">seafood</h2>
+                    </div>
+                </div>
+                <div class="go-to-burger-con">
+                    <div class="go-to-burger go-to">
+                        <a href="#burger-section1"><button class="bttn-go-to-seafood" >go</button></a>
+                    </div>
+                    <div class="go-to-burger-background go-to-bac ">
+                        <h2 class="burger-addres-go-to ">burger</h2>
+                    </div>
+                </div>
+                <div class="go-to-bizza-con">
+                    <div class="go-to-bizza go-to">
+                        <button class="bttn-go-to-seafood">go</button>
+                    </div>
+                    <div class="go-to-bizza-background go-to-bac ">
+                        <h2 class="bizza-addres-go-to">pizza</h2>
+                    </div>
+                </div>
+                <div class="go-to-sweet-con">
+                    <div class="go-to-sweet go-to">
+                        <button class="bttn-go-to-seafood ">go</button>
+                    </div>
+                    <div class="go-to-sweet-background go-to-bac ">
+                        <h2 class="sweet-addres-go-to ">sweet </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div id="seafood-section" class="section-seafood-con">
+            <img class="section-seafood-background" src="img/special-seafood.png" alt="">
+            <h1 class="section-seafood-name">sea<span class="section-seafood-name2">food</span></h1>
+        </div>
+
+        <div class="test">
+            <div class="mm cc aa1">
+                <div class="seafood-box info-seaffod-box1">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                    and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box1">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$25.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa2">
+                <div class="seafood-box info-seaffod-box2">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box2">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$30.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+
+            <div class="mm cc aa3">
+                <div class="seafood-box info-seaffod-box3">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box3">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$20.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa4">
+                <div class="seafood-box info-seaffod-box4">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box4">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$40.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa5">
+                <div class="seafood-box info-seaffod-box5">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box5">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$25.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+              
+            </div>
+            <div class="mm cc aa6">
+                <div class="seafood-box info-seaffod-box6">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box6">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$32.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa7">
+                <div class="seafood-box info-seaffod-box7">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box7">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$35.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+
+            <div class="mm cc aa8">
+                <div class="seafood-box info-seaffod-box8">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box8">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$42.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa9">
+                <div class="seafood-box info-seaffod-box9">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box9">
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$15.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa10">
+                <div class="seafood-box info-seaffod-box10">
+                    <p class="description-seafood-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="seafood-box2 background-seafood-box10">\
+                    <h3 class="seafood-box-name">food name</h3>
+                    <h3 class="seafood-box-pris">$30.00</h3>
+                    <button class="seafood-box-bttn">add to card</button>
+                </div>
+              
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="burger-section" >
+            <h2 id="burger-section1">x</h2>
+            <h2 class="burger-name-section">Burger</h2>
+        </div>
+
+        <div class="burger-con-section">
+            <div class="mm cc aa1">
+                <div class="burger-box info-seaffod-box1">
+                    <p class="description-burger-box" >Description of the meal <br>
+                    and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box1">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$25.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa2">
+                <div class="burger-box info-seaffod-box2">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box2">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$30.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+
+            <div class="mm cc aa3">
+                <div class="burger-box info-seaffod-box3">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box3">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$20.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa4">
+                <div class="burger-box info-seaffod-box4">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box4">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$40.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa5">
+                <div class="burger-box info-seaffod-box5">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box5">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$25.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+              
+            </div>
+            <div class="mm cc aa6">
+                <div class="burger-box info-seaffod-box6">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box6">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$32.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa7">
+                <div class="burger-box info-seaffod-box7">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box7">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$35.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+
+            <div class="mm cc aa8">
+                <div class="burger-box info-seaffod-box8">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box8">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$42.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa9">
+                <div class="burger-box info-burger-box9">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box9">
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$15.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+            </div>
+            <div class="mm cc aa10">
+                <div class="burger-box info-burger-box10">
+                    <p class="description-burger-box" >Description of the meal <br>
+                        and what is the quantity</p>
+                </div>
+                <div class="burger-box2 background-burger-box10">\
+                    <h3 class="burger-box-name">food name</h3>
+                    <h3 class="burger-box-pris">$30.00</h3>
+                    <button class="burger-box-bttn">add to card</button>
+                </div>
+              
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+</body>
+
+</html>
